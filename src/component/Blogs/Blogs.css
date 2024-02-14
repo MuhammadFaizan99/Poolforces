@@ -1,0 +1,171 @@
+/* Add this CSS to your Blogs.css file */
+
+.blogs-content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+}
+
+.blogs-content-container h1 {
+  font-family: 'Inter', sans-serif;
+  font-size: 50px;
+  color: #191A15;
+  margin-bottom: 20px;
+}
+
+.primary__blogs-content-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.secondary__blogs-content-container {
+  background: #F0F0F0;
+  padding: 20px;
+  margin: 20px 0;
+  text-align: center;
+  width: calc(33.33% - 40px);
+  box-sizing: border-box;
+}
+
+.secondary__blogs-content-container img {
+  height: auto;
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+.secondary__blogs-content-container p {
+  font-family: 'Poppins', sans-serif;
+  color: #AAAAAA;
+  font-size: 14px;
+  margin: 15px;
+}
+
+.secondary__blogs-content-container h3 {
+  font-family: 'Poppins', sans-serif;
+  color: #121212;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.secondary__blogs-content-container p:last-child {
+  font-family: 'Poppins', sans-serif;
+  color: #AAAAAA;
+  font-size: 16px;
+  margin-bottom: 0;
+  line-height: 23.63px;
+}
+
+.blogs-content-container p {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: #AAAAAA;
+}
+
+.blogs-content-container p.intro-paragraph {
+  font-size: 18px;
+  line-height: 25px;
+  font-family: 'Inter', sans-serif;
+  color: #191A15;
+  margin-bottom: 40px;
+}
+
+/* Media Query for screens with width less than 700px */
+@media (max-width: 700px) {
+  .blogs-content-container {
+    padding: 20px;
+  }
+
+  .primary__blogs-content-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .secondary__blogs-content-container {
+    width: 100%;
+    margin: 10px auto;
+    padding: 10px;
+  }
+
+  .secondary__blogs-content-container img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .secondary__blogs-content-container h3 {
+    margin-bottom: 20px;
+  }
+
+  .secondary__blogs-content-container p {
+    font-size: 12px;
+    margin: 10px;
+  }
+
+  .blogs-content-container p.intro-paragraph {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+}
+
+/* Media Query for screens with width between 700px and 900px */
+@media (min-width: 700px) and (max-width: 900px) {
+  .secondary__blogs-content-container h3 {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+  .secondary__blogs-content-container p {
+    font-size: 14px;
+    margin: 10px 0;
+  }
+
+  .secondary__blogs-content-container img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+  }
+}
+
+/* Pagination styles */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  background-color: #54BD95;
+  color: #fff;
+  border: 1px solid #54BD95;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.pagination button:hover {
+  background-color: #54BD95;
+}
+
+.pagination button.active {
+  background-color: #68caa5;
+}
+
+/* Optional: Style the disabled button when on the first or last page */
+.pagination button:first-child:disabled,
+.pagination button:last-child:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Optional: Style the ellipsis (...) when there are too many pages */
+.pagination .ellipsis {
+  padding: 5px 0;
+  margin: 0 5px;
+  user-select: none;
+}

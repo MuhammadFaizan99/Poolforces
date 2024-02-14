@@ -1,0 +1,217 @@
+.make-group-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .left-make-group {
+    flex: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #54BD95;
+    overflow: hidden; /* Hide horizontal overflow */
+  }
+  
+  .left-make-group img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .right-make-group {
+    flex: 50%;
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .right-make-group h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 22px;
+    text-align: center;
+    color: #1D1D1D;
+    margin-bottom: 10px;
+  }
+  
+  .right-make-group p {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: #2D3748;
+    margin-bottom: 20px;
+  }
+  
+  .field-group {
+    flex-basis: calc(50% - 10px);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  .field-group label {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: #2D3748;
+    margin-bottom: 10px;
+  }
+  
+  .field-group input[type="text"],
+  .field-group textarea,
+  .field-group input[type="file"] {
+    border: 1px solid #D1D1D1;
+    border-radius: 15px;
+    padding: 10px 10px;
+  }
+  
+  .field-group button {
+    background-color: #54BD95;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-align: center;
+    margin: 5px auto;
+    border: none;
+    cursor: pointer;
+}
+  
+  .check-input-field {
+    display: flex;
+    align-items: center;
+  }
+  
+  .check-input-field input[type="checkbox"] {
+    margin-right: 5px;
+    background-color: #54BD95;
+    color: white;
+    width: 12px;
+    height: 12px;
+    border: none;
+    border-radius: 3px;
+  }
+  
+  .check-input-field p {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: #2D3748;
+  }
+  
+  .FP-input-field a {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: #54BD95;
+    text-decoration: none;
+  }
+  
+  .FP-input-field a:hover {
+    text-decoration: underline;
+  }
+  
+  .conditions-input-field {
+    display: flex;
+    align-items: center;
+  }
+  
+  .conditions-input-field input[type="checkbox"] {
+    margin-right: 5px;
+    background-color: #54BD95;
+    color: white;
+    width: 12px;
+    height: 12px;
+    border: none;
+    border-radius: 3px;
+  }
+  
+  .conditions-input-field a {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: #54BD95;
+    text-decoration: none;
+  }
+  
+  .conditions-input-field a:hover {
+    text-decoration: underline;
+  }
+  
+  .conditions-input-field span {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: #2D3748;
+  }
+  
+  /* Media query for screens with a width less than 700px */
+  @media (max-width: 700px) {
+    .make-group-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .left-make-group {
+      flex: 100%;
+      height: auto;
+      background-color: transparent;
+      overflow: visible; /* Show hidden overflow */
+    }
+  
+    /* Add this CSS for responsiveness */
+    .left-make-group img {
+      max-width: 80%; /* Make the image responsive */
+      height: auto; /* Maintain aspect ratio */
+    }
+  
+    .right-make-group {
+      flex: 100%;
+      padding: 20px;
+    }
+  
+    .field-group {
+      flex-basis: 100%;
+    }
+  
+    .combined-buttons {
+      gap: 20px;
+    }
+  
+    .combined-buttons-row {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .combined-buttons-row .check-input-field,
+    .combined-buttons-row .FP-input-field,
+    .combined-buttons-row .conditions-input-field {
+      flex-basis: 100%;
+      text-align: center;
+    }
+  
+    .field-group input[type="text"],
+    .field-group textarea,
+    .field-group input[type="file"] {
+      width: 100%; /* Make the input fields full-width */
+    }
+  }
+  
+  /* Media query for screens between 700px and 900px */
+  @media (min-width: 700px) and (max-width: 900px) {
+    .make-group-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .left-make-group {
+      flex: 100%;
+      height: auto;
+    }
+  
+    .right-make-group {
+      flex: 100%;
+    }
+  }
+  
